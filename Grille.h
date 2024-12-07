@@ -20,6 +20,7 @@ public:
     int countVoisins(int x, int y) const;
     static Grille chargerDepuisFichier(const std::string& cheminFichier);
     void sauvegarderDansFichier(const std::string& dossierBase, int generation) const;
+    bool difference_grille(Grille grille2);
 };
 
 

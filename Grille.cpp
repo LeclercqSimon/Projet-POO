@@ -91,3 +91,18 @@ void Grille::sauvegarderDansFichier(const std::string& dossierBase, int generati
     }
     fichier.close();
 }
+bool Grille::difference_grille(Grille grille2){
+    int diff = 0;
+    for (int i=0;i<nb_colonnes;i++){
+        for (int y=0;y<nb_lignes;y++){
+            if (getCellule(i,y).estVivante() != grille2.getCellule(i,y).estVivante()){
+                diff++;
+            }
+        }
+    }
+    if (diff!=0){
+        return true;
+    }
+    return false;
+
+}

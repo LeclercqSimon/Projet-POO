@@ -24,7 +24,7 @@ void JeuDeLaVie::jouerAvecSFML() {
                 cellShape.setPosition(x * taille_cellule, y * taille_cellule);
 
                 if (grille.getCellule(x, y).estVivante()) {
-                    cellShape.setFillColor(sf::Color::White);
+                    cellShape.setFillColor(sf::Color::Magenta);
                 }
                 else {
                     cellShape.setFillColor(sf::Color::Black);
@@ -79,7 +79,12 @@ void JeuDeLaVie::appliquerRegles() {
             }
         }
     }
-
+    if (n_gen>0){
+        if (!grille.difference_grille(grille_suivante)){
+            grille.sauvegarderDansFichier(fichier, n_gen);
+            throw std::runtime_error("La grille ne bouge plus");
+        }
+    }
     grille.sauvegarderDansFichier(fichier, n_gen);
     grille = grille_suivante;
     ++n_gen;
