@@ -17,13 +17,13 @@ Cette implémentation du Jeu de la Vie de Conway est un simulateur en C++ utilis
 
 Classes principales : 
 
-__Cellule__
+- __Cellule__
     Gère l'état (vivante/morte) d'une cellule individuelle.
     Fonctions principales :
     - definirEtat(bool e) : Définit l'état de la cellule.
     - estVivante() const : Retourne l'état actuel de la cellule.
 
-__Grille :__ 
+- __Grille :__ 
     Représente une grille de cellules et gère les opérations associées.
     Fonctions principales :
     - initialiser(int lignes, int colonnes) : Initialise la grille.
@@ -33,7 +33,7 @@ __Grille :__
     - sauvegarderDansFichier(const std::string& dossierBase, int generation) : Sauvegarde l'état actuel de la grille.
     - difference_grille(Grille grille2) : Compare deux grilles pour détecter les changements.
     
-__JeuDeLaVie :__
+- __JeuDeLaVie :__
   Contrôle la logique de simulation et l'affichage.
   Fonctions principales :
   - jouerAvecSFML() : Lance la simulation avec affichage graphique.
