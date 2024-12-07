@@ -72,7 +72,6 @@ Exemple :
 # Commandes Interactives
 - Touche Up : Augmente la vitesse de simulation.
 - Touche Down : Diminue la vitesse de simulation.
-- Touche Escape : Quitte la simulation.
 
 # Notes
 Si la grille devient statique, la simulation s'arrête automatiquement avec un message.
