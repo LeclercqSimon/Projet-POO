@@ -1,4 +1,4 @@
-## Projet-POO-JeuDeLaVie
+## Projet-POO-JeuDeLaVie par Leclercq Simon et Jaidane Elyesse
 
 # Description
 
