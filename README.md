@@ -18,20 +18,20 @@ Cette implémentation du Jeu de la Vie de Conway est un simulateur en C++ utilis
 Classes principales : 
 
 __Cellule__
-  - Gère l'état (vivante/morte) d'une cellule individuelle.
-  - Fonctions principales :
-  - definirEtat(bool e) : Définit l'état de la cellule.
-  - estVivante() const : Retourne l'état actuel de la cellule.
+    Gère l'état (vivante/morte) d'une cellule individuelle.
+    Fonctions principales :
+    - definirEtat(bool e) : Définit l'état de la cellule.
+    - estVivante() const : Retourne l'état actuel de la cellule.
 
 __Grille :__ 
     Représente une grille de cellules et gère les opérations associées.
-  - Fonctions principales :
-  - initialiser(int lignes, int colonnes) : Initialise la grille.
-  - setCellule(int x, int y, bool e) : Modifie l'état d'une cellule.
-  - countVoisins(int x, int y) const : Compte les voisins vivants d'une cellule.
-  - chargerDepuisFichier(const std::string& cheminFichier) : Charge une grille depuis un fichier texte.
-  - sauvegarderDansFichier(const std::string& dossierBase, int generation) : Sauvegarde l'état actuel de la grille.
-  - difference_grille(Grille grille2) : Compare deux grilles pour détecter les changements.
+    Fonctions principales :
+    - initialiser(int lignes, int colonnes) : Initialise la grille.
+    - setCellule(int x, int y, bool e) : Modifie l'état d'une cellule.
+    - countVoisins(int x, int y) const : Compte les voisins vivants d'une cellule.
+    - chargerDepuisFichier(const std::string& cheminFichier) : Charge une grille depuis un fichier texte.
+    - sauvegarderDansFichier(const std::string& dossierBase, int generation) : Sauvegarde l'état actuel de la grille.
+    - difference_grille(Grille grille2) : Compare deux grilles pour détecter les changements.
     
 __JeuDeLaVie :__
   Contrôle la logique de simulation et l'affichage.
@@ -39,7 +39,7 @@ __JeuDeLaVie :__
   - jouerAvecSFML() : Lance la simulation avec affichage graphique.
   - appliquerRegles() : Applique les règles du Jeu de la Vie pour une génération.
 
-Fonction main :
+__Fonction main :__
 - Gère l'entrée utilisateur pour charger le fichier de configuration et le nombre de générations.
 - Lance l'exécution de la simulation avec l'affichage graphique SFML.
 
