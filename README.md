@@ -77,5 +77,5 @@ Exemple :
 Si la grille devient statique, la simulation s'arrête automatiquement avec un message.
 Les états de chaque génération sont sauvegardés dans le répertoire out_<nom_fichier>.
 
-Auteur
+# Auteur
 Projet réalisé dans le cadre de l'apprentissage du C++ et de la bibliothèque SFML par LECLERCQ Simon et JAIDANE Elyesse, élèves de CPI A2 INFORMATIQUE au CESI.
