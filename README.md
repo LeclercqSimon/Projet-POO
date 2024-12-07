@@ -59,7 +59,7 @@ Regardez l'évolution des cellules dans la fenêtre SFML.
 __Fichier de Test :__
 - glider.txt : fichier avec un glider qui se déplace
 - fichier.txt : fichier avec une génération aléatoire
-- error.txt : fichier qui génère une erreur après 2 génrations car la grille ne bouge plus
+- error.txt : fichier qui génère une erreur après 2 générations car la grille ne bouge plus
     
 # Format du fichier de configuration
 Le fichier texte doit avoir le format suivant :
