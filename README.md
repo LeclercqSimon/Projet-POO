@@ -66,14 +66,6 @@ Le fichier texte doit avoir le format suivant :
 - Première ligne : dimensions de la grille (lignes colonnes).
 - Lignes suivantes : 0 pour une cellule morte, 1 pour une cellule vivante.
 
-Exemple :
-5 5
-0 0 0 0 0
-0 1 1 1 0
-0 1 0 1 0
-0 1 1 1 0
-0 0 0 0 0
-
 # Commandes Interactives
 - Touche Up : Augmente la vitesse de simulation.
 - Touche Down : Diminue la vitesse de simulation.
